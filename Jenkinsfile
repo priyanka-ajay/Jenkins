@@ -1,6 +1,6 @@
 pipeline{
     //agent any
-    agent {label 'worker'}
+    agent {label 'worker-cloud'}
     options{
         buildDiscarder(logRotator(daysToKeepStr: '7'))
         disableConcurrentBuilds()
