@@ -16,7 +16,7 @@ pipeline{
         stage('Build '){
             steps{
                 sh "echo hello C32"
-                sh "sleep 9"
+                sh "sleep 8"
             }
         }
     }
