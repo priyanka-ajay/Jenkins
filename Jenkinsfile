@@ -20,4 +20,9 @@ pipeline{
             }
         }
     }
+    post{
+        success{
+            slackSend channel: 'jenkins', message: 'build success'
+        }
+    }
 }
